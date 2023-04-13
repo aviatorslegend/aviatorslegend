@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Удаление данных с игры</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Подключаем внешний файл стилей -->
+</head>
+<body>
+    <header>
+        <h1 class="title">Удаление данных с игры</h1>
+        <div class="icon-container">
+            <img src="icon.png" alt="Game Icon" class="icon">
+        </div>
+        <div class="description-container">
+            <p class="description">Вы можете запросить удаление своих данных с нашей игры. Пожалуйста, укажите свой
+                игровой никнейм ниже:</p>
+        </div>
+    </header>
+    <main>
+        <form class="form-container" method="post" action="/delete-data">
+            <label for="username" class="form-label">Игровой никнейм:</label>
+            <input type="text" id="username" name="username" class="form-input" required>
+            <button type="submit" class="button">Удалить данные</button>
+        </form>
+    </main>
+    <footer>
+        <p class="footer-text">Все права защищены. &copy; 2023. Aviator's Legend.</p>
+    </footer>
+</body>
+</html>
